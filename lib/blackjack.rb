@@ -27,7 +27,9 @@ end
 
 def initial_round
   hand = 0
-  2.times do hand += deal_card
+  2.times do 
+    hand += deal_card
+  end
   display_card_total(hand)
 end
 
