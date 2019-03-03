@@ -42,14 +42,14 @@ def hit?(hand)
   elsif input == "h"
     hand += deal_card
   else
-    invalid_command
+    invalid_command(hand)
   end
   hand
 end
 
-def invalid_command
+def invalid_command(hand)
   puts "Please enter a valid command"
-  hit?
+  hit?(hand)
 end
 
 #####################################################
@@ -57,6 +57,12 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  hand = initial_round
+  until hand > 21 do
+    hit?(hand)
+    display_card_total
+  end
+end_game(hand)
 end
     
