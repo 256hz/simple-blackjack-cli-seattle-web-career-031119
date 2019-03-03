@@ -37,9 +37,9 @@ end
 def hit?(hand)
   prompt_user
   input = get_user_input
-  if input = "s"
+  if input == "s"
     pass
-  elsif input = "h"
+  elsif input == "h"
     hand += deal_card
   else
     invalid_command
