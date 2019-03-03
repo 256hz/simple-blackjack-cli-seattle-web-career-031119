@@ -31,7 +31,8 @@ def initial_round
   input = get_user_input
   if input = "h"
     hand += deal_card
-    elsif input = "s"
+  elsif input = "s"
+    pass
 end
 
 def hit?
