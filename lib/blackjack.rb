@@ -29,7 +29,9 @@ def initial_round
   end
   prompt_user
   input = get_user_input
-  if input 
+  if input = "h"
+    hand += deal_card
+    elsif input = "s"
 end
 
 def hit?
